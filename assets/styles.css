@@ -24,6 +24,10 @@ html {
     scroll-padding-top: 120px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     background: var(--navbar);
     width: 100%;
