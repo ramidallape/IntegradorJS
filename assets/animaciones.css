@@ -1,0 +1,136 @@
+.navbar_list-item {
+   transition: color 0.2s;
+   -webkit-transition: color 0.2s;
+   -moz-transition: color 0.2s;
+   -ms-transition: color 0.2s;
+   -o-transition: color 0.2s;
+}
+
+.navbar_list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: var(--border);
+    z-index: -1;
+    left: 100%;
+    width: 0%;
+    transition: 0.2s;
+}
+
+.navbar_list-item:hover {
+    color: var(--card);
+}
+
+.navbar_list-item:hover::before {
+    left: 0%;
+    width: 100%;
+    transition: width 0.2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+       
+}
+
+    100% {
+        transform: rotate(360deg);
+       
+}
+}
+
+.logo {
+    animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
+}
+
+.overlay {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+.show-overlay {
+    display: block;
+}
+
+
+
+.navbar_list li {
+    position: relative;
+    padding: 0;
+}
+
+.navbar_list li a:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition:  transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    
+}
+
+.cart-icon {
+    transition: all 0.2s ease-out;
+}
+  
+.cart-icon:hover {
+    color: var(--card);
+    border-color: var(--card);
+    transition: all 0.2s ease-in;
+}
+
+.quantity-handler {
+    transition: all 0.2s ease-in;
+}
+  
+.quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--card);
+    transition: all 0.2s ease-in;
+}
+
+.btn-add {
+    transition: all 0.2s ease-out;
+}
+  
+.btn-add:hover {
+    background-color: var(--card);
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+
+.btn_buy {
+    transition: all 0.3s ease-out;
+}
+
+.btn_buy:hover {
+    background-color: var(--border);
+    transition: all 0.3s ease-in;
+}
+
+
+
+

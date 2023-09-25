@@ -1,0 +1,141 @@
+.................................................<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapau Vapers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="shortcut icon" href="/Imagenes/logo-empresa.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <link rel="stylesheet" href="/assets/animaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/contacto.css">
+</head>
+<body>
+    <header>
+        <img src="/Imagenes/logo-empresa.png" alt="logo rapau" class="logo">
+        <nav class="navbar">
+            <label for="menu_toggle" class="menu_label">
+                <img src="/Imagenes/menu/menu.png" alt="icono menu" class="menu_icon">
+            </label>
+            
+            <ul class="navbar_list">
+                <li><a href="#hero" class="navbar_list-item">Inicio</a></li>
+                <li><a href="#about_us" class="navbar_list-item">Nosotros</a></li>
+                <li><a href="#cards" class="navbar_list-item">Productos</a></li>
+                <li><a href="#contact" class="navbar_list-item">Contacto</a></li>
+            </ul>
+            <div class="cart-label">
+                <i class="fas fa-shopping-cart cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+      
+            <div class="cart">
+                <h2>Carrito</h2>
+      
+                <div class="cart-container"></div>
+      
+                <span class="divider"></span>
+      
+                <div class="cart-total">
+                  <p>Total:</p>
+                  <span class="total">$13900</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+            
+            <a href="/assets/login.html" target="_blank"><img class="acceso" src="/Imagenes/inicio-sesion/acceso.png" alt="acceso"></a>
+            
+            <div class="overlay"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero_info">
+                <h1>Vapers electrónicos</h1>
+                <h3>¿Que son los vaporizadores electrónicos?</h3>
+                <p>Son "cigarrillos" compuestos por su batería y cartucho o boquilla, la cual se activa al inhalar, y de esta forma, vaporiza el líquido que contiene en su interior, es una experiencia similar a la de fumar, solo que es con vapor y no con humo. Este mecanismo hace que sea mucho menos nocivo que el cigarrilo.
+                </p>
+                <h3>¿Pod o vaper?</h3>
+                <p>Si sos nuevo en este mundo, hay recomendaciones a tener en cuenta. Existen dos tipos de cigarrillos electrónicos: podes tener vaper o pod, según necesidad y uso.</p>
+                <p>La principal diferencia está en su tamaño. Un pod es mucho más ligero de llevar, mientras que un vaper es más grande. Otra diferencia es que el pod utiliza sales de nicotina en su uso, mientras que un vaper emplea líquido con nicotina en su forma base. Por otro lado un pod ofrece un golpe de garganta más profundo debido a su carga mayor de nicotina, mientras que un vaper proporciona una experiencia mas suave.</p>
+                <p>Habiendo dejado claras las diferencias, nuestra recomendación es que un pod le es más funcional a una persona que quiere dejar de fumar cigarrillo o tabaco, al ofrecer una experiencia "similar"</p>    
+            </div>
+            <div class="hero_img">
+                <img src="/Imagenes/hero/vaper.jpg" alt="humo vaper">
+            </div>
+        </section>
+        <section id="about_us">
+            <div class="about_us-info">
+                <h3>Un poquito de nuestra historia.</h3>
+                <p>Somos Ramiro y Paula. Hace 10 años que veníamos fumando cigarrillos y ya era hora de dejarlo, fue ahí cuando descubrimos los vapers y realmente fue un camino de ida. Pudimos dejar el cigarrillo instántaneamente y gracias a esta experiencia, despues de años no hemos vuelto a agarrarlo.</p>
+                <p>Los cigarrillos electrónicos pueden ayudar en el proceso de dejar el humo del cigarrillo, cambiándolo por el vaper. Este es, cerca de un 95% menos dañino que el cigarrillo. Algunas ventajas con respecto al cigarrillo o tabaco tradicional son: la menor exposición a sustancias químicas, no dejar dientes amarillentos, no causar mal olor y contaminar menos al medio ambiente.</p>
+                <p>Dicho esto, no queremos alentar al consumo de cigarrillos electrónicos. Ésta es una experiencia similiar, y como un método de ayuda para dejar un hábito mucho más grave. Pero siempre record <span>todo en exceso es malo.</span></p>
+            </div>
+        </section>
+        <section id="cards">
+            <h2>Productos</h2>
+            <div class="categories">
+                <button class="category active">Todos</button>
+                <button class="category" data-category="pod_recarg">Pod Recargables</button>
+                <button class="category" data-category="vaper_recarg">Vaper Recargables</button>
+                <button class="category" data-category="pod_descart">Pod Descartables</button>
+            </div>
+            <div class="cards"></div>
+            <button class="btn_load">Ver más</button>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="container_contact">
+                <div class="container_contact-dat">
+                    <p>
+                        <img src="/Imagenes/contacto/llamada-telefonica.png" alt="icono whatsapp" class="contact_img">
+                        2617217480
+                    </p>
+                    <div class="container_contact-dat">
+                        <p>
+                            <img src="/Imagenes/contacto/email.png" alt="icono email" class="contact_img">
+                            rapauvapers@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name">
+                        <span id="nameError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                        <span id="messageError" class="error"></span>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section id="footer">
+            <img src="/Imagenes/logo-empresa.png" alt="logo empresa" class="footer_img">
+            <h2>Yo no fumo, yo vapeo.</h2>
+        </section>
+    </main>
+    <div class="add-modal"></div>
+    <script src="./assets/contacto.js"></script>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/main.js"></script>
+    
+</body>
+</html>

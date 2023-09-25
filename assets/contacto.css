@@ -1,0 +1,35 @@
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: flex;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    background-color: var(--border);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: 2px solid var(--);
+    border-radius: 5px;
+}
+button {
+    background: var(--navbar-text);
+    border: 3px solid var(--text);
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.error {
+    color: red;
+
+}
