@@ -496,7 +496,7 @@ header {
     background: var(--navbar-text);
     border: 3px solid var(--text);
     padding: 16px 32px;
-    color: var(--bg-white);
+    color: var(--background);
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -573,8 +573,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-white);
-    background-color: green;
+    color: var(--background);
+    font-weight: 600;
+    background-color: var(--navbar-text);
     position: fixed;
     bottom: 0;
     width: 100%;
