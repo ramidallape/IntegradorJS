@@ -155,4 +155,22 @@ header {
 .navbar {
     gap: 20px;
 }
+
+.cart {
+    min-width: unset;
+    height: calc(100vh - 125px);
+}
+.cart-container {
+    align-items: center;
+}
+.cart-item {
+    width: 70%;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.item-info {
+    text-align: center;
+}
+
 }

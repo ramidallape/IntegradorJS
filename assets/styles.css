@@ -78,7 +78,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 105px);
     overflow-y: scroll;
     z-index: 2;
     min-width: 375px;
@@ -508,6 +508,7 @@ header {
     padding: 30px 80px;
     max-width: 100%;
     background: var(--background);
+    
 }
 
 #contact h2 {
