@@ -150,7 +150,7 @@
 
 header {
     padding: 0;
-    justify-content: start;
+    justify-content: baseline;
 }
 .navbar {
     gap: 20px;
